@@ -1,0 +1,6 @@
+<template name="index$7d57ccc5">
+  <view class="_view data-v-3e12626a content">
+    <text class="_text data-v-3e12626a title">{{title}}</text>
+    <view class="_view data-v-3e12626a"> 666 </view>
+  </view>
+</template>

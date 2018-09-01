@@ -1,0 +1,26 @@
+
+.header-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 60rpx 10rpx 20rpx;
+  font-size: 28rpx;
+}
+.search-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 30rpx;
+}
+.search-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 20rpx;
+}
+.search-content {
+  width: 100%;
+}
+.msg {
+  width: 100rpx;
+}
