@@ -1,11 +1,5 @@
 <template>
 	<view class="container">
-		<!-- 头部 -->
-		<view class="header-container" :style="{'background':gcolor}">
-			<view class="header-btns"></view>
-			<view class="header-title">购物车</view>
-			<view class="header-btns">编辑</view>
-		</view>
 		<!-- 内容区 -->
 		<view class="body-container">
 			cart
@@ -14,6 +8,7 @@
 </template>
 
 <script>
+	let ntitlebar;
 	import {
 		mapState,
 		mapMutations
@@ -30,8 +25,28 @@
 		methods:{
 			init(){
 				
+			},
+            onClick(){
+			    console.log('onClick')
 			}
-		}
+		},
+        onShow:function(option){
+            console.log('onShow')
+            ntitlebar = new plus.nativeObj.View('ntitlebar',
+                {top:'0px',left:'0px',height:'44px',width:'100%',backgroundColor:'rgba(0,0,0,0)',statusbar:{background:'#D43030'}},
+                [
+                    {tag:'font',id:'font',text:'编辑'
+                        ,position: {top: "0",right: "20px"}
+                        ,textStyles:{align:'right',size:'18px',color:'#FFFFFF'}}
+                ]
+            );
+            ntitlebar.addEventListener("click", this.onClick, false);
+            ntitlebar.show()
+        },
+        onHide:function(option){
+            console.log('onHide')
+            ntitlebar.close();
+        }
 	}
 </script>
 

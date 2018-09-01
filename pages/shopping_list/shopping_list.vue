@@ -1,11 +1,5 @@
 <template>
 	<view class="container">
-		<!-- 头部 -->
-		<view class="header-container" :style="{'background':gcolor}">
-			<view class="header-btns"></view>
-			<view class="header-title">常购清单</view>
-			<view class="header-btns"></view>
-		</view>
 		<!-- 内容区 -->
 		<view class="body-container">
 			shopping_list

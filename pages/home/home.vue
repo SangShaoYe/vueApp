@@ -1,31 +1,15 @@
 <template>
 	<view class="container">
-		<!-- 头部 -->
-		<view class="header-container" :style="{'background':gcolor}">
-			<!-- <text class="city" @click="ToMessage">{{city}}</text> -->
-			<view class="header-btns" @click="ToMessage">
-				<view class="icon icon-favorite"></view>
-				<view >消息</view>	
-			</view>
-			<view class="header-search-wrapper">
-				<image class="header-search-icon" src="../../static/search.png" mode=""></image>
-				<input class="header-search-content" type="text" value="" placeholder="搜索商品名称" />
-			</view>
-			<view class="header-btns" @click="ToMessage">
-				<!-- <view class="icon icon-favorite" ></view>
-				<view >消息</view>	 -->
-			</view>
-		</view>
 		<!-- 内容区 -->
 		<view class="body-container">
 			<!-- 轮播图区 -->
-			<view class="banner-container">
-				<swiper :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :indicator-active-color="gcolor" :duration="duration">
-					<swiper-item v-for="item in itemList" :key="item">
-						<image class="swiper-image" :src="item" mode=""></image>
-					</swiper-item>
-				</swiper>
-			</view>
+			<!--<view class="banner-container">-->
+				<!--<swiper :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :indicator-active-color="gcolor" :duration="duration">-->
+					<!--<swiper-item v-for="item in itemList" :key="item">-->
+						<!--<image class="swiper-image" :src="item" mode=""></image>-->
+					<!--</swiper-item>-->
+				<!--</swiper>-->
+			<!--</view>-->
 			<view class="">
 				<!-- 首页 -->
 				<button type="primary" size="mini" @click="update">button</button>
@@ -69,6 +53,7 @@
 			...mapMutations(['setbadgeCount']),
 			...mapMutations(['setbadgeView']),
 			init(){
+			    return;
 				console.log(this.gcolor)
 				//#ifdef APP-PLUS
 				badgeView = new plus.nativeObj.View('test',

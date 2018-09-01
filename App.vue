@@ -80,7 +80,6 @@
 	
 	.body-container{
 		font-size: 28px;
-		margin-top: 120px;
 		height: 2000px;
 	}
 	

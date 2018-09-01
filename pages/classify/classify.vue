@@ -53,7 +53,7 @@
 		},
 		onShow:function(option){
 			console.log('onShow')
-			ntitlebar = new plus.nativeObj.View('test',
+			ntitlebar = new plus.nativeObj.View('ntitlebar',
 				{top:'0px',left:'0px',height:'49px',width:'100%',backgroundColor:'#3A3A3A',statusbar:{background:'#333333'}},
 				[
 					{tag:'rect',id:'rect',color:'#FF0000',position:{top:'12px',left:'12px',width:'24px',height:'24px'}},
