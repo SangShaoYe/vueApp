@@ -28,7 +28,7 @@
 			</view>
 			<view class="">
 				<!-- 首页 -->
-				<button type="primary" size="mini" @click="update">button</button>
+				<button type="primary" size="mini" @click="update">button1122</button>
 			</view>
 		</view>
 		
