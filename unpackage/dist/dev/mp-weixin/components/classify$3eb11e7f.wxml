@@ -1,0 +1,8 @@
+<template name="classify$3eb11e7f">
+  <view class="_view data-v-2f82eb40 container">
+    <view class="_view data-v-2f82eb40 body-container">
+      <view class="_view data-v-2f82eb40">cart</view>
+      <view class="_view data-v-2f82eb40 icon-add_circle"></view>
+    </view>
+  </view>
+</template>
