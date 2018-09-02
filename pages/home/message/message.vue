@@ -94,7 +94,7 @@
 							 {tag:'rect',id:'rect2',rectStyles:{color:'#FFFFFF',radius:'60px'},position:{top:'8px',left:'20%',width:'60%',height:'30px'}},
 							{tag:'input',id:'input',color:'#FFFFFF',inputStyles:{fonstSize:'14px',placeholder:'寻找调料、食材',borderColor:'#ffffff',borderRadius:'50px'},position:{top:'20px',left:'20%',width:'60%',height:'30px'}},
 							
-							{tag:'font',id:'font2',text:'消息'
+							{tag:'font',id:'font2',text:'搜索'
 													,position: {top: "0",left: "80%",width:'20%'}
 													,textStyles:{align:'center',size:'16px',color:'#FFFFFF'}}
 		
