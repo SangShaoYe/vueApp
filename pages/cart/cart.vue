@@ -27,25 +27,37 @@
 				
 			},
             onClick(){
-			    console.log('onClick')
+			    uni.showToast({
+					title:'编辑',
+					icon:'success'
+				})
+				
+				plus.nativeUI.actionSheet( {title:"Plus is ready!",cancel:"取消",buttons:[{title:"确定"},{title:"取消"}]}, function(e){
+
+				console.log( "User pressed: "+e.index );
+
+				} );
 			}
 		},
         onShow:function(option){
-            console.log('onShow')
-            ntitlebar = new plus.nativeObj.View('ntitlebar',
-                {top:'0px',left:'0px',height:'44px',width:'100%',backgroundColor:'rgba(0,0,0,0)',statusbar:{background:'#D43030'}},
-                [
-                    {tag:'font',id:'font',text:'编辑'
-                        ,position: {top: "0",right: "20px"}
-                        ,textStyles:{align:'right',size:'18px',color:'#FFFFFF'}}
-                ]
-            );
-            ntitlebar.addEventListener("click", this.onClick, false);
-            ntitlebar.show()
+// 		    let W = uni.getSystemInfoSync()
+//             let leftPos = W.windowWidth - 100
+//             console.log('onShow')
+//             console.log(W.windowWidth)
+//             ntitlebar = new plus.nativeObj.View('ntitlebar',
+//                 {top:'0px',left:'80%',height:'44px',width:'20%',backgroundColor:'rgba(0,0,0,0.5)',statusbar:{background:'#D43030'}},
+//                 [
+//                     {tag:'font',id:'font',text:'编辑'
+//                         ,position: {top: "0",left: "0px"}
+//                         ,textStyles:{align:'center',size:'16px',color:'#FFFFFF'}}
+//                 ]
+//             );
+//             ntitlebar.addEventListener("click", this.onClick, false);
+//             ntitlebar.show()
         },
         onHide:function(option){
             console.log('onHide')
-            ntitlebar.close();
+            // ntitlebar.close();
         }
 	}
 </script>

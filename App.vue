@@ -80,7 +80,7 @@
 	
 	.body-container{
 		font-size: 28px;
-		height: 2000px;
+		/* height: 2000px; */
 	}
 	
 	@font-face {

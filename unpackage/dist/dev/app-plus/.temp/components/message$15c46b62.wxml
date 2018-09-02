@@ -1,12 +1,5 @@
 <template name="message$15c46b62">
   <view class="_view data-v-a9ceb0a4 container">
-    <view class="_view data-v-a9ceb0a4 header-container" style=" {{('background:' + gcolor + ';')}}">
-      <view class="_view data-v-a9ceb0a4 header-btns">
-        <view class="_view data-v-a9ceb0a4 icon icon-arrow_lift" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}"></view>
-      </view>
-      <view class="_view data-v-a9ceb0a4 header-title">通知消息</view>
-      <view class="_view data-v-a9ceb0a4 header-btns"></view>
-    </view>
     <view class="_view data-v-a9ceb0a4 body-container">
       <view class="_view data-v-a9ceb0a4 lists" wx:key="index" key="{{index}}" wx:for="{{msgList}}" wx:for-index="index" wx:for-item="list">
         <view class="_view data-v-a9ceb0a4 name">{{list.name}}</view>

@@ -54,7 +54,6 @@ page {
 }
 .body-container {
   font-size: 28rpx;
-  height: 2000rpx;
 }
 @font-face {
   font-family: 'icomoon';

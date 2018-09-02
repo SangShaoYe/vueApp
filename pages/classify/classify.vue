@@ -53,18 +53,18 @@
 		},
 		onShow:function(option){
 			console.log('onShow')
-			ntitlebar = new plus.nativeObj.View('ntitlebar',
-				{top:'0px',left:'0px',height:'49px',width:'100%',backgroundColor:'#3A3A3A',statusbar:{background:'#333333'}},
-				[
-					{tag:'rect',id:'rect',color:'#FF0000',position:{top:'12px',left:'12px',width:'24px',height:'24px'}},
-					{tag:'font',id:'font',text:'原生控件',textStyles:{size:'18px'}}
-				]
-			);
-			ntitlebar.show()
+// 			ntitlebar = new plus.nativeObj.View('ntitlebar',
+// 				{top:'0px',left:'0px',height:'49px',width:'100%',backgroundColor:'#3A3A3A',statusbar:{background:'#333333'}},
+// 				[
+// 					{tag:'rect',id:'rect',color:'#FF0000',position:{top:'12px',left:'12px',width:'24px',height:'24px'}},
+// 					{tag:'font',id:'font',text:'原生控件',textStyles:{size:'18px'}}
+// 				]
+// 			);
+// 			ntitlebar.show()
 		},
 		onHide:function(option){
 			console.log('onHide')
-			ntitlebar.close();
+			// ntitlebar.close();
 		}
 	}
 </script>
