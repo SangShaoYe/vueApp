@@ -15,7 +15,16 @@
 		{
 			"path": "pages/cart/cart",
 			"style": {
-				"navigationBarTitleText": "购物车"
+				"navigationBarTitleText": "购物车",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[{
+							"text":"编辑",
+							"fontSize":"14px",
+							"float":"right"
+						}]
+					}
+				}
 			}
 		},
 		{
@@ -27,13 +36,19 @@
 		{
 			"path": "pages/me/me",
 			"style": {
-				"navigationBarTitleText": "me"
+				"navigationBarTitleText": "我的"
 			}
 		},
 		{
 			"path": "pages/home/message/message",
 			"style": {
-				"navigationBarTitleText": "message"
+				"navigationBarTitleText": "通知消息"
+			}
+		},
+		{
+			"path": "pages/home/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索"
 			}
 		}
 	],

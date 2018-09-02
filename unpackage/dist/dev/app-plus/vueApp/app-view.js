@@ -964,13 +964,13 @@ __WXML_GLOBAL__.debuginfo_set = __WXML_GLOBAL__.debuginfo_set || {};
 var debugInfo=__WXML_GLOBAL__.debuginfo_set.$gwx || [];
 if ( !__WXML_GLOBAL__.ops_init.$gwx){
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([3,'cart$7a5e86ff']);debugInfo.push(['./components/cart$7a5e86ff.wxml',1,15]);Z([3,'_view data-v-ac55fb40 container']);debugInfo.push(['./components/cart$7a5e86ff.wxml',2,15]);Z([3,'_view data-v-ac55fb40 body-container']);debugInfo.push(['./components/cart$7a5e86ff.wxml',3,17]);Z([3,' cart ']);debugInfo.push(['./components/cart$7a5e86ff.wxml',3,56]);Z([3,'classify$3eb11e7f']);debugInfo.push(['./components/classify$3eb11e7f.wxml',1,15]);Z([3,'_view data-v-2f82eb40 container']);debugInfo.push(['./components/classify$3eb11e7f.wxml',2,15]);Z([3,'_view data-v-2f82eb40 body-container']);debugInfo.push(['./components/classify$3eb11e7f.wxml',3,17]);Z([3,'_view data-v-2f82eb40']);debugInfo.push(['./components/classify$3eb11e7f.wxml',4,19]);Z([a,[3,'分类 '],[[7],[3,'badgeCount']]]);debugInfo.push(['./components/classify$3eb11e7f.wxml',4,43]);Z([3,'_view data-v-2f82eb40 icon-add_circle']);debugInfo.push(['./components/classify$3eb11e7f.wxml',5,19]);Z([3,'home$3881165f']);debugInfo.push(['./components/home$3881165f.wxml',1,15]);Z([3,'_view data-v-67f791c0 container']);debugInfo.push(['./components/home$3881165f.wxml',2,15]);Z([3,'_view data-v-67f791c0 body-container']);debugInfo.push(['./components/home$3881165f.wxml',3,17]);Z([3,'_view data-v-67f791c0 banner-container']);debugInfo.push(['./components/home$3881165f.wxml',4,19]);Z([[7],[3,'autoplay']]);debugInfo.push(['./components/home$3881165f.wxml',5,61]);Z([3,'_swiper data-v-67f791c0']);debugInfo.push(['./components/home$3881165f.wxml',5,166]);Z([[7],[3,'duration']]);debugInfo.push(['./components/home$3881165f.wxml',5,145]);Z([[7],[3,'gcolor']]);debugInfo.push(['./components/home$3881165f.wxml',5,123]);Z([[7],[3,'indicatorDots']]);debugInfo.push(['./components/home$3881165f.wxml',5,32]);Z([[7],[3,'interval']]);debugInfo.push(['./components/home$3881165f.wxml',5,85]);Z([3,'index']);debugInfo.push(['./components/home$3881165f.wxml',6,88]);Z([3,'item']);debugInfo.push(['./components/home$3881165f.wxml',6,108]);Z([[7],[3,'itemList']]);debugInfo.push(['./components/home$3881165f.wxml',6,60]);Z(z[21]);debugInfo.push(['./components/home$3881165f.wxml',6,31]);Z([3,'_swiper-item data-v-67f791c0']);debugInfo.push(['./components/home$3881165f.wxml',6,121]);Z([[7],[3,'item']]);debugInfo.push(['./components/home$3881165f.wxml',6,42]);Z([3,'_image data-v-67f791c0 swiper-image']);debugInfo.push(['./components/home$3881165f.wxml',7,26]);Z(z[25]);debugInfo.push(['./components/home$3881165f.wxml',7,68]);Z([3,'_view data-v-67f791c0']);debugInfo.push(['./components/home$3881165f.wxml',11,19]);Z([3,'handleProxy']);debugInfo.push(['./components/home$3881165f.wxml',12,52]);Z([3,'_button data-v-67f791c0']);debugInfo.push(['./components/home$3881165f.wxml',12,116]);Z([[7],[3,'$k']]);debugInfo.push(['./components/home$3881165f.wxml',12,101]);Z([1,'0']);debugInfo.push(['./components/home$3881165f.wxml',12,79]);Z([3,'mini']);debugInfo.push(['./components/home$3881165f.wxml',12,37]);Z([3,'primary']);debugInfo.push(['./components/home$3881165f.wxml',12,22]);Z([3,'button']);debugInfo.push(['./components/home$3881165f.wxml',12,142]);Z([3,'me$b0d59f02']);debugInfo.push(['./components/me$b0d59f02.wxml',1,15]);Z([3,'_view data-v-1ce788c0']);debugInfo.push(['./components/me$b0d59f02.wxml',2,15]);Z([3,' 我的 ']);debugInfo.push(['./components/me$b0d59f02.wxml',2,39]);Z([3,'message$15c46b62']);debugInfo.push(['./components/message$15c46b62.wxml',1,15]);Z([3,'_view data-v-a9ceb0a4 container']);debugInfo.push(['./components/message$15c46b62.wxml',2,15]);Z([3,'_view data-v-a9ceb0a4 body-container']);debugInfo.push(['./components/message$15c46b62.wxml',3,17]);Z(z[20]);debugInfo.push(['./components/message$15c46b62.wxml',4,114]);Z([3,'list']);debugInfo.push(['./components/message$15c46b62.wxml',4,134]);Z([[7],[3,'msgList']]);debugInfo.push(['./components/message$15c46b62.wxml',4,87]);Z(z[20]);debugInfo.push(['./components/message$15c46b62.wxml',4,56]);Z([3,'_view data-v-a9ceb0a4 lists']);debugInfo.push(['./components/message$15c46b62.wxml',4,19]);Z([[7],[3,'index']]);debugInfo.push(['./components/message$15c46b62.wxml',4,68]);Z([3,'_view data-v-a9ceb0a4 name']);debugInfo.push(['./components/message$15c46b62.wxml',5,21]);Z([a,[[6],[[7],[3,'list']],[3,'name']]]);debugInfo.push(['./components/message$15c46b62.wxml',5,50]);Z([3,'_view data-v-a9ceb0a4 date']);debugInfo.push(['./components/message$15c46b62.wxml',6,21]);Z([a,[[6],[[7],[3,'list']],[3,'date']]]);debugInfo.push(['./components/message$15c46b62.wxml',6,50]);Z([3,'shopping_list$36caed1e']);debugInfo.push(['./components/shopping_list$36caed1e.wxml',1,15]);Z([3,'_view data-v-9a9afde8 container']);debugInfo.push(['./components/shopping_list$36caed1e.wxml',2,15]);Z([3,'_view data-v-9a9afde8 body-container']);debugInfo.push(['./components/shopping_list$36caed1e.wxml',3,17]);Z([3,' shopping_list ']);debugInfo.push(['./components/shopping_list$36caed1e.wxml',3,56]);Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]]);debugInfo.push(['./pages/cart/cart.wxml',1,81]);Z(z[0]);debugInfo.push(['./pages/cart/cart.wxml',1,60]);Z(z[56]);debugInfo.push(['./pages/classify/classify.wxml',1,89]);Z(z[4]);debugInfo.push(['./pages/classify/classify.wxml',1,64]);Z(z[56]);debugInfo.push(['./pages/home/home.wxml',1,81]);Z(z[10]);debugInfo.push(['./pages/home/home.wxml',1,60]);Z(z[56]);debugInfo.push(['./pages/home/message/message.wxml',1,90]);Z(z[39]);debugInfo.push(['./pages/home/message/message.wxml',1,66]);Z(z[56]);debugInfo.push(['./pages/me/me.wxml',1,77]);Z(z[36]);debugInfo.push(['./pages/me/me.wxml',1,58]);Z(z[56]);debugInfo.push(['./pages/shopping_list/shopping_list.wxml',1,99]);Z(z[52]);debugInfo.push(['./pages/shopping_list/shopping_list.wxml',1,69]);})(z);__WXML_GLOBAL__.ops_set.$gwx=z;
+Z([3,'cart$7a5e86ff']);debugInfo.push(['./components/cart$7a5e86ff.wxml',1,15]);Z([3,'_view data-v-ac55fb40 container']);debugInfo.push(['./components/cart$7a5e86ff.wxml',2,15]);Z([3,'_view data-v-ac55fb40 body-container']);debugInfo.push(['./components/cart$7a5e86ff.wxml',3,17]);Z([3,' cart ']);debugInfo.push(['./components/cart$7a5e86ff.wxml',3,56]);Z([3,'classify$3eb11e7f']);debugInfo.push(['./components/classify$3eb11e7f.wxml',1,15]);Z([3,'_view data-v-2f82eb40 container']);debugInfo.push(['./components/classify$3eb11e7f.wxml',2,15]);Z([3,'_view data-v-2f82eb40 body-container']);debugInfo.push(['./components/classify$3eb11e7f.wxml',3,17]);Z([3,'_view data-v-2f82eb40']);debugInfo.push(['./components/classify$3eb11e7f.wxml',4,19]);Z([a,[3,'分类 '],[[7],[3,'badgeCount']]]);debugInfo.push(['./components/classify$3eb11e7f.wxml',4,43]);Z([3,'_view data-v-2f82eb40 icon-add_circle']);debugInfo.push(['./components/classify$3eb11e7f.wxml',5,19]);Z([3,'home$3881165f']);debugInfo.push(['./components/home$3881165f.wxml',1,15]);Z([3,'_view data-v-67f791c0 container']);debugInfo.push(['./components/home$3881165f.wxml',2,15]);Z([3,'_view data-v-67f791c0 body-container']);debugInfo.push(['./components/home$3881165f.wxml',3,17]);Z([3,'_view data-v-67f791c0 banner-container']);debugInfo.push(['./components/home$3881165f.wxml',4,19]);Z([[7],[3,'autoplay']]);debugInfo.push(['./components/home$3881165f.wxml',5,61]);Z([3,'_swiper data-v-67f791c0']);debugInfo.push(['./components/home$3881165f.wxml',5,166]);Z([[7],[3,'duration']]);debugInfo.push(['./components/home$3881165f.wxml',5,145]);Z([[7],[3,'gcolor']]);debugInfo.push(['./components/home$3881165f.wxml',5,123]);Z([[7],[3,'indicatorDots']]);debugInfo.push(['./components/home$3881165f.wxml',5,32]);Z([[7],[3,'interval']]);debugInfo.push(['./components/home$3881165f.wxml',5,85]);Z([3,'index']);debugInfo.push(['./components/home$3881165f.wxml',6,88]);Z([3,'item']);debugInfo.push(['./components/home$3881165f.wxml',6,108]);Z([[7],[3,'itemList']]);debugInfo.push(['./components/home$3881165f.wxml',6,60]);Z(z[21]);debugInfo.push(['./components/home$3881165f.wxml',6,31]);Z([3,'_swiper-item data-v-67f791c0']);debugInfo.push(['./components/home$3881165f.wxml',6,121]);Z([[7],[3,'item']]);debugInfo.push(['./components/home$3881165f.wxml',6,42]);Z([3,'_image data-v-67f791c0 swiper-image']);debugInfo.push(['./components/home$3881165f.wxml',7,26]);Z(z[25]);debugInfo.push(['./components/home$3881165f.wxml',7,68]);Z([3,'_view data-v-67f791c0']);debugInfo.push(['./components/home$3881165f.wxml',11,19]);Z([3,'handleProxy']);debugInfo.push(['./components/home$3881165f.wxml',12,52]);Z([3,'_button data-v-67f791c0']);debugInfo.push(['./components/home$3881165f.wxml',12,116]);Z([[7],[3,'$k']]);debugInfo.push(['./components/home$3881165f.wxml',12,101]);Z([1,'0']);debugInfo.push(['./components/home$3881165f.wxml',12,79]);Z([3,'mini']);debugInfo.push(['./components/home$3881165f.wxml',12,37]);Z([3,'primary']);debugInfo.push(['./components/home$3881165f.wxml',12,22]);Z([3,'button']);debugInfo.push(['./components/home$3881165f.wxml',12,142]);Z([3,'me$b0d59f02']);debugInfo.push(['./components/me$b0d59f02.wxml',1,15]);Z([3,'_view data-v-1ce788c0']);debugInfo.push(['./components/me$b0d59f02.wxml',2,15]);Z([3,' 我的 ']);debugInfo.push(['./components/me$b0d59f02.wxml',2,39]);Z([3,'message$15c46b62']);debugInfo.push(['./components/message$15c46b62.wxml',1,15]);Z([3,'_view data-v-a9ceb0a4 container']);debugInfo.push(['./components/message$15c46b62.wxml',2,15]);Z([3,'_view data-v-a9ceb0a4 body-container']);debugInfo.push(['./components/message$15c46b62.wxml',3,17]);Z(z[20]);debugInfo.push(['./components/message$15c46b62.wxml',4,114]);Z([3,'list']);debugInfo.push(['./components/message$15c46b62.wxml',4,134]);Z([[7],[3,'msgList']]);debugInfo.push(['./components/message$15c46b62.wxml',4,87]);Z(z[20]);debugInfo.push(['./components/message$15c46b62.wxml',4,56]);Z([3,'_view data-v-a9ceb0a4 lists']);debugInfo.push(['./components/message$15c46b62.wxml',4,19]);Z([[7],[3,'index']]);debugInfo.push(['./components/message$15c46b62.wxml',4,68]);Z([3,'_view data-v-a9ceb0a4 name']);debugInfo.push(['./components/message$15c46b62.wxml',5,21]);Z([a,[[6],[[7],[3,'list']],[3,'name']]]);debugInfo.push(['./components/message$15c46b62.wxml',5,50]);Z([3,'_view data-v-a9ceb0a4 date']);debugInfo.push(['./components/message$15c46b62.wxml',6,21]);Z([a,[[6],[[7],[3,'list']],[3,'date']]]);debugInfo.push(['./components/message$15c46b62.wxml',6,50]);Z([3,'search$ee45fce8']);debugInfo.push(['./components/search$ee45fce8.wxml',1,15]);Z([3,'_view data-v-0b21575e container']);debugInfo.push(['./components/search$ee45fce8.wxml',2,15]);Z([3,'_view data-v-0b21575e body-container']);debugInfo.push(['./components/search$ee45fce8.wxml',3,17]);Z([3,' 搜索 ']);debugInfo.push(['./components/search$ee45fce8.wxml',3,56]);Z([3,'shopping_list$36caed1e']);debugInfo.push(['./components/shopping_list$36caed1e.wxml',1,15]);Z([3,'_view data-v-9a9afde8 container']);debugInfo.push(['./components/shopping_list$36caed1e.wxml',2,15]);Z([3,'_view data-v-9a9afde8 body-container']);debugInfo.push(['./components/shopping_list$36caed1e.wxml',3,17]);Z([3,' shopping_list ']);debugInfo.push(['./components/shopping_list$36caed1e.wxml',3,56]);Z([[9],[[10],[[6],[[7],[3,'$root']],[1,'0']]],[[8],'$root',[[7],[3,'$root']]]]);debugInfo.push(['./pages/cart/cart.wxml',1,81]);Z(z[0]);debugInfo.push(['./pages/cart/cart.wxml',1,60]);Z(z[60]);debugInfo.push(['./pages/classify/classify.wxml',1,89]);Z(z[4]);debugInfo.push(['./pages/classify/classify.wxml',1,64]);Z(z[60]);debugInfo.push(['./pages/home/home.wxml',1,81]);Z(z[10]);debugInfo.push(['./pages/home/home.wxml',1,60]);Z(z[60]);debugInfo.push(['./pages/home/message/message.wxml',1,90]);Z(z[39]);debugInfo.push(['./pages/home/message/message.wxml',1,66]);Z(z[60]);debugInfo.push(['./pages/home/search/search.wxml',1,88]);Z(z[52]);debugInfo.push(['./pages/home/search/search.wxml',1,65]);Z(z[60]);debugInfo.push(['./pages/me/me.wxml',1,77]);Z(z[36]);debugInfo.push(['./pages/me/me.wxml',1,58]);Z(z[60]);debugInfo.push(['./pages/shopping_list/shopping_list.wxml',1,99]);Z(z[56]);debugInfo.push(['./pages/shopping_list/shopping_list.wxml',1,69]);})(z);__WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 __WXML_GLOBAL__.debuginfo_set.$gwx=debugInfo;
 }
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);throw e;}
 }}}()
-var x=['./components/cart$7a5e86ff.wxml','./components/classify$3eb11e7f.wxml','./components/home$3881165f.wxml','./components/me$b0d59f02.wxml','./components/message$15c46b62.wxml','./components/shopping_list$36caed1e.wxml','./pages/cart/cart.wxml','../../components/cart$7a5e86ff','./pages/classify/classify.wxml','../../components/classify$3eb11e7f','./pages/home/home.wxml','../../components/home$3881165f','./pages/home/message/message.wxml','../../../components/message$15c46b62','./pages/me/me.wxml','../../components/me$b0d59f02','./pages/shopping_list/shopping_list.wxml','../../components/shopping_list$36caed1e'];d_[x[0]]={}
+var x=['./components/cart$7a5e86ff.wxml','./components/classify$3eb11e7f.wxml','./components/home$3881165f.wxml','./components/me$b0d59f02.wxml','./components/message$15c46b62.wxml','./components/search$ee45fce8.wxml','./components/shopping_list$36caed1e.wxml','./pages/cart/cart.wxml','../../components/cart$7a5e86ff','./pages/classify/classify.wxml','../../components/classify$3eb11e7f','./pages/home/home.wxml','../../components/home$3881165f','./pages/home/message/message.wxml','../../../components/message$15c46b62','./pages/home/search/search.wxml','../../../components/search$ee45fce8','./pages/me/me.wxml','../../components/me$b0d59f02','./pages/shopping_list/shopping_list.wxml','../../components/shopping_list$36caed1e'];d_[x[0]]={}
 d_[x[0]]["cart$7a5e86ff"]=function(e,s,r,gg){
 var b=x[0]+':cart$7a5e86ff'
 r.wxVkey=b
@@ -1191,17 +1191,17 @@ return r
 }
 e_[x[4]]={f:m4,j:[],i:[],ti:[],ic:[]}
 d_[x[5]]={}
-d_[x[5]]["shopping_list$36caed1e"]=function(e,s,r,gg){
-var b=x[5]+':shopping_list$36caed1e'
+d_[x[5]]["search$ee45fce8"]=function(e,s,r,gg){
+var b=x[5]+':search$ee45fce8'
 r.wxVkey=b
-gg.f=$gdc(f_["./components/shopping_list$36caed1e.wxml"],"",1)
+gg.f=$gdc(f_["./components/search$ee45fce8.wxml"],"",1)
 if(p_[b]){_wl(b,x[5]);return}
 p_[b]=true
 try{
-cs.push("./components/shopping_list$36caed1e.wxml:view:2:4")
+cs.push("./components/search$ee45fce8.wxml:view:2:4")
 var oB=_n('view')
 _r(oB,'class',53,e,s,gg)
-cs.push("./components/shopping_list$36caed1e.wxml:view:3:6")
+cs.push("./components/search$ee45fce8.wxml:view:3:6")
 var xC=_n('view')
 _r(xC,'class',54,e,s,gg)
 var oD=_o(55,e,s,gg)
@@ -1222,137 +1222,190 @@ return r
 }
 e_[x[5]]={f:m5,j:[],i:[],ti:[],ic:[]}
 d_[x[6]]={}
+d_[x[6]]["shopping_list$36caed1e"]=function(e,s,r,gg){
+var b=x[6]+':shopping_list$36caed1e'
+r.wxVkey=b
+gg.f=$gdc(f_["./components/shopping_list$36caed1e.wxml"],"",1)
+if(p_[b]){_wl(b,x[6]);return}
+p_[b]=true
+try{
+cs.push("./components/shopping_list$36caed1e.wxml:view:2:4")
+var oB=_n('view')
+_r(oB,'class',57,e,s,gg)
+cs.push("./components/shopping_list$36caed1e.wxml:view:3:6")
+var xC=_n('view')
+_r(xC,'class',58,e,s,gg)
+var oD=_o(59,e,s,gg)
+_(xC,oD)
+cs.pop()
+_(oB,xC)
+cs.pop()
+_(r,oB)
+}catch(err){
+p_[b]=false
+throw err
+}
+p_[b]=false
+return r
+}
 var m6=function(e,s,r,gg){
-var oH=e_[x[6]].i
-_ai(oH,x[7],e_,x[6],1,1)
-var cI=_v()
-_(r,cI)
-cs.push("./pages/cart/cart.wxml:template:1:48")
-var oJ=_o(57,e,s,gg)
-var lK=_gd(x[6],oJ,e_,d_)
-if(lK){
-var aL=_1(56,e,s,gg) || {}
-var cur_globalf=gg.f
-cI.wxXCkey=3
-lK(aL,aL,cI,gg)
-gg.f=cur_globalf
-}
-else _w(oJ,x[6],1,60)
-cs.pop()
-oH.pop()
 return r
 }
-e_[x[6]]={f:m6,j:[],i:[],ti:[x[7]],ic:[]}
-d_[x[8]]={}
+e_[x[6]]={f:m6,j:[],i:[],ti:[],ic:[]}
+d_[x[7]]={}
 var m7=function(e,s,r,gg){
-var eN=e_[x[8]].i
-_ai(eN,x[9],e_,x[8],1,1)
-var bO=_v()
-_(r,bO)
-cs.push("./pages/classify/classify.wxml:template:1:52")
-var oP=_o(59,e,s,gg)
-var xQ=_gd(x[8],oP,e_,d_)
-if(xQ){
-var oR=_1(58,e,s,gg) || {}
+var cI=e_[x[7]].i
+_ai(cI,x[8],e_,x[7],1,1)
+var oJ=_v()
+_(r,oJ)
+cs.push("./pages/cart/cart.wxml:template:1:48")
+var lK=_o(61,e,s,gg)
+var aL=_gd(x[7],lK,e_,d_)
+if(aL){
+var tM=_1(60,e,s,gg) || {}
 var cur_globalf=gg.f
-bO.wxXCkey=3
-xQ(oR,oR,bO,gg)
+oJ.wxXCkey=3
+aL(tM,tM,oJ,gg)
 gg.f=cur_globalf
 }
-else _w(oP,x[8],1,64)
+else _w(lK,x[7],1,60)
 cs.pop()
-eN.pop()
+cI.pop()
 return r
 }
-e_[x[8]]={f:m7,j:[],i:[],ti:[x[9]],ic:[]}
-d_[x[10]]={}
+e_[x[7]]={f:m7,j:[],i:[],ti:[x[8]],ic:[]}
+d_[x[9]]={}
 var m8=function(e,s,r,gg){
-var cT=e_[x[10]].i
-_ai(cT,x[11],e_,x[10],1,1)
-var hU=_v()
-_(r,hU)
-cs.push("./pages/home/home.wxml:template:1:48")
-var oV=_o(61,e,s,gg)
-var cW=_gd(x[10],oV,e_,d_)
-if(cW){
-var oX=_1(60,e,s,gg) || {}
+var bO=e_[x[9]].i
+_ai(bO,x[10],e_,x[9],1,1)
+var oP=_v()
+_(r,oP)
+cs.push("./pages/classify/classify.wxml:template:1:52")
+var xQ=_o(63,e,s,gg)
+var oR=_gd(x[9],xQ,e_,d_)
+if(oR){
+var fS=_1(62,e,s,gg) || {}
 var cur_globalf=gg.f
-hU.wxXCkey=3
-cW(oX,oX,hU,gg)
+oP.wxXCkey=3
+oR(fS,fS,oP,gg)
 gg.f=cur_globalf
 }
-else _w(oV,x[10],1,60)
+else _w(xQ,x[9],1,64)
 cs.pop()
-cT.pop()
+bO.pop()
 return r
 }
-e_[x[10]]={f:m8,j:[],i:[],ti:[x[11]],ic:[]}
-d_[x[12]]={}
+e_[x[9]]={f:m8,j:[],i:[],ti:[x[10]],ic:[]}
+d_[x[11]]={}
 var m9=function(e,s,r,gg){
-var aZ=e_[x[12]].i
-_ai(aZ,x[13],e_,x[12],1,1)
-var t1=_v()
-_(r,t1)
-cs.push("./pages/home/message/message.wxml:template:1:54")
-var e2=_o(63,e,s,gg)
-var b3=_gd(x[12],e2,e_,d_)
-if(b3){
-var o4=_1(62,e,s,gg) || {}
+var hU=e_[x[11]].i
+_ai(hU,x[12],e_,x[11],1,1)
+var oV=_v()
+_(r,oV)
+cs.push("./pages/home/home.wxml:template:1:48")
+var cW=_o(65,e,s,gg)
+var oX=_gd(x[11],cW,e_,d_)
+if(oX){
+var lY=_1(64,e,s,gg) || {}
 var cur_globalf=gg.f
-t1.wxXCkey=3
-b3(o4,o4,t1,gg)
+oV.wxXCkey=3
+oX(lY,lY,oV,gg)
 gg.f=cur_globalf
 }
-else _w(e2,x[12],1,66)
+else _w(cW,x[11],1,60)
 cs.pop()
-aZ.pop()
+hU.pop()
 return r
 }
-e_[x[12]]={f:m9,j:[],i:[],ti:[x[13]],ic:[]}
-d_[x[14]]={}
+e_[x[11]]={f:m9,j:[],i:[],ti:[x[12]],ic:[]}
+d_[x[13]]={}
 var m10=function(e,s,r,gg){
-var o6=e_[x[14]].i
-_ai(o6,x[15],e_,x[14],1,1)
-var f7=_v()
-_(r,f7)
-cs.push("./pages/me/me.wxml:template:1:46")
-var c8=_o(65,e,s,gg)
-var h9=_gd(x[14],c8,e_,d_)
-if(h9){
-var o0=_1(64,e,s,gg) || {}
+var t1=e_[x[13]].i
+_ai(t1,x[14],e_,x[13],1,1)
+var e2=_v()
+_(r,e2)
+cs.push("./pages/home/message/message.wxml:template:1:54")
+var b3=_o(67,e,s,gg)
+var o4=_gd(x[13],b3,e_,d_)
+if(o4){
+var x5=_1(66,e,s,gg) || {}
 var cur_globalf=gg.f
-f7.wxXCkey=3
-h9(o0,o0,f7,gg)
+e2.wxXCkey=3
+o4(x5,x5,e2,gg)
 gg.f=cur_globalf
 }
-else _w(c8,x[14],1,58)
+else _w(b3,x[13],1,66)
 cs.pop()
-o6.pop()
+t1.pop()
 return r
 }
-e_[x[14]]={f:m10,j:[],i:[],ti:[x[15]],ic:[]}
-d_[x[16]]={}
+e_[x[13]]={f:m10,j:[],i:[],ti:[x[14]],ic:[]}
+d_[x[15]]={}
 var m11=function(e,s,r,gg){
-var oBB=e_[x[16]].i
-_ai(oBB,x[17],e_,x[16],1,1)
-var lCB=_v()
-_(r,lCB)
-cs.push("./pages/shopping_list/shopping_list.wxml:template:1:57")
-var aDB=_o(67,e,s,gg)
-var tEB=_gd(x[16],aDB,e_,d_)
-if(tEB){
-var eFB=_1(66,e,s,gg) || {}
+var f7=e_[x[15]].i
+_ai(f7,x[16],e_,x[15],1,1)
+var c8=_v()
+_(r,c8)
+cs.push("./pages/home/search/search.wxml:template:1:53")
+var h9=_o(69,e,s,gg)
+var o0=_gd(x[15],h9,e_,d_)
+if(o0){
+var cAB=_1(68,e,s,gg) || {}
 var cur_globalf=gg.f
-lCB.wxXCkey=3
-tEB(eFB,eFB,lCB,gg)
+c8.wxXCkey=3
+o0(cAB,cAB,c8,gg)
 gg.f=cur_globalf
 }
-else _w(aDB,x[16],1,69)
+else _w(h9,x[15],1,65)
 cs.pop()
-oBB.pop()
+f7.pop()
 return r
 }
-e_[x[16]]={f:m11,j:[],i:[],ti:[x[17]],ic:[]}
+e_[x[15]]={f:m11,j:[],i:[],ti:[x[16]],ic:[]}
+d_[x[17]]={}
+var m12=function(e,s,r,gg){
+var lCB=e_[x[17]].i
+_ai(lCB,x[18],e_,x[17],1,1)
+var aDB=_v()
+_(r,aDB)
+cs.push("./pages/me/me.wxml:template:1:46")
+var tEB=_o(71,e,s,gg)
+var eFB=_gd(x[17],tEB,e_,d_)
+if(eFB){
+var bGB=_1(70,e,s,gg) || {}
+var cur_globalf=gg.f
+aDB.wxXCkey=3
+eFB(bGB,bGB,aDB,gg)
+gg.f=cur_globalf
+}
+else _w(tEB,x[17],1,58)
+cs.pop()
+lCB.pop()
+return r
+}
+e_[x[17]]={f:m12,j:[],i:[],ti:[x[18]],ic:[]}
+d_[x[19]]={}
+var m13=function(e,s,r,gg){
+var xIB=e_[x[19]].i
+_ai(xIB,x[20],e_,x[19],1,1)
+var oJB=_v()
+_(r,oJB)
+cs.push("./pages/shopping_list/shopping_list.wxml:template:1:57")
+var fKB=_o(73,e,s,gg)
+var cLB=_gd(x[19],fKB,e_,d_)
+if(cLB){
+var hMB=_1(72,e,s,gg) || {}
+var cur_globalf=gg.f
+oJB.wxXCkey=3
+cLB(hMB,hMB,oJB,gg)
+gg.f=cur_globalf
+}
+else _w(fKB,x[19],1,69)
+cs.pop()
+xIB.pop()
+return r
+}
+e_[x[19]]={f:m13,j:[],i:[],ti:[x[20]],ic:[]}
 if(path&&e_[path]){
 window.__wxml_comp_version__=0.02
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
@@ -1408,7 +1461,7 @@ return number;
 }
 var setCssToHead = function(file, _xcInvalid) {
 var Ca = {};
-var _C= [[[2,1],],["body { min-height: 100%; }\n.",[1],"header-container { display: flex; align-items: center; color: white; padding: ",[0,60]," ",[0,10]," ",[0,20],"; font-size: ",[0,28],"; position: fixed; width: 100%; height: ",[0,40],"; left: 0; top: 0; z-index: 999; }\n.",[1],"header-btns { width: ",[0,100],"; text-align: center; font-size: ",[0,24],"; display: flex; flex-direction: column; justify-content: center; }\n.",[1],"header-back { width: ",[0,40],"; height: ",[0,40],"; margin-left: ",[0,10],"; }\n.",[1],"header-title { width: 100%; line-height: ",[0,52],"; text-align: center; }\n.",[1],"header-container .",[1],"icon { color: white; padding: 0 ",[0,10],"; }\n.",[1],"header-search-wrapper { flex: 1; display: flex; align-items: center; background: white; border-radius: ",[0,30],"; }\n.",[1],"header-search-icon { width: ",[0,30],"; height: ",[0,30],"; margin: 0 ",[0,20],"; }\n.",[1],"header-search-content { width: 100%; }\n.",[1],"body-container { font-size: ",[0,28],"; }\n@font-face { font-family: \x27icomoon\x27; src: url(\x27https://www.zgsj1.com/Public/fm_static/bg_img/icomoon_font/icomoon.eot\x27); src: url(\x27https://www.zgsj1.com/Public/fm_static/bg_img/icomoon_font/icomoon.eot\x27) format(\x27embedded-opentype\x27),\n	url(\x27https://www.zgsj1.com/Public/fm_static/bg_img/icomoon_font/icomoon.ttf\x27) format(\x27truetype\x27),\n	url(\x27https://www.zgsj1.com/Public/fm_static/bg_img/icomoon_font/icomoon.woff\x27) format(\x27woff\x27),\n	url(\x27https://www.zgsj1.com/Public/fm_static/bg_img/icomoon_font/icomoon.svg\x27) format(\x27svg\x27); font-weight: normal; font-style: normal; }\n[class^\x3d\x22icon-\x22], [class*\x3d\x22 icon-\x22] { font-family: \x27icomoon\x27 !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }\n.",[1],"icon-add_circle:before { content: \x22\\E900\x22; }\n.",[1],"icon-arrow_lift:before { content: \x22\\E901\x22; }\n.",[1],"icon-check_circle:before { content: \x22\\E902\x22; }\n.",[1],"icon-close:before { content: \x22\\E903\x22; }\n.",[1],"icon-favorite:before { content: \x22\\E904\x22; }\n.",[1],"icon-keyboard_arrow_right:before { content: \x22\\E905\x22; }\n.",[1],"icon-remove_circle_outline:before { content: \x22\\E906\x22; }\n.",[1],"icon-shopping_cart:before { content: \x22\\E907\x22; }\n.",[1],"icon-thumb_down:before { content: \x22\\E908\x22; }\n.",[1],"icon-thumb_up:before { content: \x22\\E909\x22; }\n",],[],[".",[1],"header-container { display: flex; align-items: center; color: white; padding: ",[0,60]," ",[0,10]," ",[0,20],"; font-size: ",[0,28],"; }\n.",[1],"search-wrapper { flex: 1; display: flex; align-items: center; background: white; border-radius: ",[0,30],"; }\n.",[1],"search-icon { width: ",[0,30],"; height: ",[0,30],"; margin: 0 ",[0,20],"; }\n.",[1],"search-content { width: 100%; }\n.",[1],"msg { width: ",[0,100],"; }\n",],[".",[1],"content { flex: 1; justify-content: center; align-items: center; }\n.",[1],"title { font-size: ",[0,36],"; color: #8f8f94; }\n.",[1],"city { width: ",[0,100],"; text-align: center; }\n.",[1],"swiper-image { width: 100%; height: 100%; }\n",],[".",[1],"lists { padding: ",[0,20]," ",[0,30],"; border-bottom: ",[0,2]," solid #cccccc; }\n.",[1],"date { text-align: right; font-size: ",[0,24],"; color: #aaaaaa; }\n",],[],[],];
+var _C= [[[2,1],],["body { min-height: 100%; }\n.",[1],"header-container { display: flex; align-items: center; color: white; padding: ",[0,60]," ",[0,10]," ",[0,20],"; font-size: ",[0,28],"; position: fixed; width: 100%; height: ",[0,40],"; left: 0; top: 0; z-index: 999; }\n.",[1],"header-btns { width: ",[0,100],"; text-align: center; font-size: ",[0,24],"; display: flex; flex-direction: column; justify-content: center; }\n.",[1],"header-back { width: ",[0,40],"; height: ",[0,40],"; margin-left: ",[0,10],"; }\n.",[1],"header-title { width: 100%; line-height: ",[0,52],"; text-align: center; }\n.",[1],"header-container .",[1],"icon { color: white; padding: 0 ",[0,10],"; }\n.",[1],"header-search-wrapper { flex: 1; display: flex; align-items: center; background: white; border-radius: ",[0,30],"; }\n.",[1],"header-search-icon { width: ",[0,30],"; height: ",[0,30],"; margin: 0 ",[0,20],"; }\n.",[1],"header-search-content { width: 100%; }\n.",[1],"body-container { font-size: ",[0,28],"; }\n@font-face { font-family: \x27icomoon\x27; src: url(\x27https://www.zgsj1.com/Public/fm_static/bg_img/icomoon_font/icomoon.eot\x27); src: url(\x27https://www.zgsj1.com/Public/fm_static/bg_img/icomoon_font/icomoon.eot\x27) format(\x27embedded-opentype\x27),\n	url(\x27https://www.zgsj1.com/Public/fm_static/bg_img/icomoon_font/icomoon.ttf\x27) format(\x27truetype\x27),\n	url(\x27https://www.zgsj1.com/Public/fm_static/bg_img/icomoon_font/icomoon.woff\x27) format(\x27woff\x27),\n	url(\x27https://www.zgsj1.com/Public/fm_static/bg_img/icomoon_font/icomoon.svg\x27) format(\x27svg\x27); font-weight: normal; font-style: normal; }\n[class^\x3d\x22icon-\x22], [class*\x3d\x22 icon-\x22] { font-family: \x27icomoon\x27 !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }\n.",[1],"icon-add_circle:before { content: \x22\\E900\x22; }\n.",[1],"icon-arrow_lift:before { content: \x22\\E901\x22; }\n.",[1],"icon-check_circle:before { content: \x22\\E902\x22; }\n.",[1],"icon-close:before { content: \x22\\E903\x22; }\n.",[1],"icon-favorite:before { content: \x22\\E904\x22; }\n.",[1],"icon-keyboard_arrow_right:before { content: \x22\\E905\x22; }\n.",[1],"icon-remove_circle_outline:before { content: \x22\\E906\x22; }\n.",[1],"icon-shopping_cart:before { content: \x22\\E907\x22; }\n.",[1],"icon-thumb_down:before { content: \x22\\E908\x22; }\n.",[1],"icon-thumb_up:before { content: \x22\\E909\x22; }\n",],[],[".",[1],"header-container { display: flex; align-items: center; color: white; padding: ",[0,60]," ",[0,10]," ",[0,20],"; font-size: ",[0,28],"; }\n.",[1],"search-wrapper { flex: 1; display: flex; align-items: center; background: white; border-radius: ",[0,30],"; }\n.",[1],"search-icon { width: ",[0,30],"; height: ",[0,30],"; margin: 0 ",[0,20],"; }\n.",[1],"search-content { width: 100%; }\n.",[1],"msg { width: ",[0,100],"; }\n",],[".",[1],"content { flex: 1; justify-content: center; align-items: center; }\n.",[1],"title { font-size: ",[0,36],"; color: #8f8f94; }\n.",[1],"city { width: ",[0,100],"; text-align: center; }\n.",[1],"swiper-image { width: 100%; height: 100%; }\n",],[".",[1],"lists { padding: ",[0,20]," ",[0,30],"; border-bottom: ",[0,2]," solid #cccccc; }\n.",[1],"date { text-align: right; font-size: ",[0,24],"; color: #aaaaaa; }\n",],[".",[1],"lists { padding: ",[0,20]," ",[0,30],"; border-bottom: ",[0,2]," solid #cccccc; }\n.",[1],"date { text-align: right; font-size: ",[0,24],"; color: #aaaaaa; }\n",],[],[],];
 function makeup(file, suffix) {
 var _n = typeof(file) === "number";
 if ( _n && Ca.hasOwnProperty(file)) return "";

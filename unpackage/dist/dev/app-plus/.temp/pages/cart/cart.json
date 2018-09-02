@@ -1,3 +1,12 @@
 {
-  "navigationBarTitleText": "购物车"
+  "navigationBarTitleText": "购物车",
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "编辑",
+        "fontSize": "14px",
+        "float": "right"
+      }
+    ]
+  }
 }

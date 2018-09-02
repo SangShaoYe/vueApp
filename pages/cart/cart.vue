@@ -26,17 +26,45 @@
 			init(){
 				
 			},
-            onClick(){
-			    uni.showToast({
-					title:'编辑',
-					icon:'success'
+			clickButton(){
+				uni.showToast({
+					title:'click'
 				})
+			},
+            onClick(){
 				
-				plus.nativeUI.actionSheet( {title:"Plus is ready!",cancel:"取消",buttons:[{title:"确定"},{title:"取消"}]}, function(e){
 
-				console.log( "User pressed: "+e.index );
+				// ntitlebar.drawText()
+// 				([{
+// 					id: 'ntitlebar',
+// 					tags: [{
+// 						id: 'font',
+// 						text:'编辑2',
+// 						textStyles:{align:'center',size:'16px',color:'#cccccc'}
+// 					}]
+// 				}])
 
-				} );
+				
+				// 打开其他网页
+				
+// 				let webview = plus.webview.create('http://m.weibo.cn/u/3196963860', 'test', {'titleNView':{'backgroundColor':'#D74B28','titleText':'标题栏文字','titleColor':'#CCCCCC',autoBackButton:false,buttons:[{text:'点击',float:'left',onclick:this.clickButton}]}});
+// 	webview.addEventListener('close', function(){
+// 		webview=null;
+// 	});
+// 	webview.addEventListener('titleUpdate', function(){
+// 		webview.show();
+// 	});
+	
+// 			    uni.showToast({
+// 					title:'编辑',
+// 					icon:'success'
+// 				})
+// 				
+// 				plus.nativeUI.actionSheet( {title:"Plus is ready!",cancel:"取消",buttons:[{title:"确定"},{title:"取消"}]}, function(e){
+// 
+// 				console.log( "User pressed: "+e.index );
+// 
+// 				} );
 			}
 		},
         onShow:function(option){
@@ -45,7 +73,7 @@
 //             console.log('onShow')
 //             console.log(W.windowWidth)
 //             ntitlebar = new plus.nativeObj.View('ntitlebar',
-//                 {top:'0px',left:'80%',height:'44px',width:'20%',backgroundColor:'rgba(0,0,0,0.5)',statusbar:{background:'#D43030'}},
+//                 {top:'0px',left:'80%',height:'44px',width:'20%',backgroundColor:'rgba(0,0,0,0)',statusbar:{background:'#D43030'}},
 //                 [
 //                     {tag:'font',id:'font',text:'编辑'
 //                         ,position: {top: "0",left: "0px"}
@@ -58,7 +86,13 @@
         onHide:function(option){
             console.log('onHide')
             // ntitlebar.close();
-        }
+        },
+		onNavigationBarButtonTap:function(e){
+            console.log(JSON.stringify(e))
+			uni.showToast({
+				title:'click'
+			})
+        },
 	}
 </script>
 
