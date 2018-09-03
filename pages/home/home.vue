@@ -1,26 +1,10 @@
 <template>
 	<view class="container">
-		<!-- 头部 -->
-		<!--<view class="header-container" :style="{'background':gcolor}">-->
-			<!--&lt;!&ndash; <text class="city" @click="ToMessage">{{city}}</text> &ndash;&gt;-->
-			<!--<view class="header-btns" @click="ToMessage">-->
-				<!--<view class="icon icon-favorite"></view>-->
-				<!--<view >消息</view>	-->
-			<!--</view>-->
-			<!--<view class="header-search-wrapper">-->
-				<!--<image class="header-search-icon" src="../../static/search.png" mode=""></image>-->
-				<!--<input class="header-search-content" type="text" value="" placeholder="搜索商品名称" />-->
-			<!--</view>-->
-			<!--<view class="header-btns" @click="ToMessage">-->
-				<!--&lt;!&ndash; <view class="icon icon-favorite" ></view>-->
-				<!--<view >消息</view>	 &ndash;&gt;-->
-			<!--</view>-->
-		<!--</view>-->
 		<!-- 内容区 -->
 		<view class="body-container">
 			<!-- 轮播图区 -->
 			<view class="banner-container">
-				<swiper :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :indicator-active-color="gcolor" :duration="duration">
+				<swiper :indicator-dots="indicatorDots" :circular="circular" :autoplay="autoplay" :interval="interval" :indicator-active-color="gcolor" :duration="duration">
 					<swiper-item v-for="item in itemList" :key="item">
 						<image class="swiper-image" :src="item" mode=""></image>
 					</swiper-item>
@@ -54,8 +38,9 @@
 				autoplay: true,
 				interval: 5000,
 				duration: 1000,
+				circular: true,
 				
-				city:'杭州'
+				city:'柯桥'
 			}
 		},
 		created:function(){
@@ -129,22 +114,25 @@
 				})
 			},
 			onHeadTap(e){
-				uni.showToast({
-					title:'C',
-					icon:'success'
-				})
 				let W = uni.getSystemInfoSync()
-				// console.log(JSON.stringify(e))
 				var x=e.clientX;
 				var y=e.clientY;
 				if(y>10&&y<40){
 					//发现图标区域
 					if(x>(0) && x<(W.windowWidth * 0.2)){
 						console.log(JSON.stringify('A'))
+						uni.showToast({
+							title:'A',
+							icon:'success'
+						})
 					}
 					//search框的区域
 					if(x>(W.windowWidth * 0.2) && x<(W.windowWidth * 0.8)){
 						console.log(JSON.stringify('B'))
+						uni.showToast({
+							title:'B',
+							icon:'success'
+						})
 						uni.navigateTo({
 							url:'search/search',
 						})
@@ -152,6 +140,10 @@
 					//add图标区域
 					if(x>(W.windowWidth * 0.8) && x<(W.windowWidth)){
 						console.log(JSON.stringify('C'))
+						uni.showToast({
+							title:'C',
+							icon:'success'
+						})
 						uni.navigateTo({
 							url:'message/message',
 						})
@@ -164,15 +156,13 @@
 		},
 		onShow:function(option){
 			
-	
-	
 			let W = uni.getSystemInfoSync()
 			let leftPos = W.windowWidth - 100
 			this.view_head = new plus.nativeObj.View('ntitlebar',
-				{top:'0px',left:'0px',height:'44px',width:'100%',backgroundColor:'#D43030',statusbar:{background:'#D43030'}}
+				{top:'0px',left:'0px',height:'44px',width:'100%',backgroundColor:'rgba(0,0,0,0)',statusbar:{background:'#D43030'}}
 				,
 				[
-					{tag:'font',id:'font',text:'杭州'
+					{tag:'font',id:'font',text:this.city
 											,position: {top: "0",left: "0px",width:'20%'}
 											,textStyles:{align:'center',size:'16px',color:'#FFFFFF'}},
 							
@@ -194,9 +184,7 @@
 // 						},
 // 						position:{top:'0px',left:'25%'}
 // 					}
-// 	{tag:'font',id:'font',text:'编辑'
-// 		,position: {top: "0",left: "0px"}
-// 		,textStyles:{align:'center',size:'16px',color:'#FFFFFF'}}
+
 
 				]
 			);
@@ -212,8 +200,6 @@
 				height: "40px"
 			});
 			
-// 			this.view_head_c.drawRect({color:'rgba(0,0,0,0.7)',borderWidth:'2px',radius:'40px'},
-// 		{top:'0px',left:'100px',width:leftPos-100+'px',height:'90%'})
 // 			this.view_head_c.drawInput({top:'0px',left:'150px',width:leftPos-150+'px',height:'40px'}, {fontSize:'14px',radius:'40px',color:'#FFFFFF',borderWidth:'2px'}, 'input');
 			// this.view_head_c.drawText('文本', {top:'0px',left:'0px',width:'100%',height:'100%'}, {size:'22px',color:'#FF0000'});
 // 			this.view_head_l = new plus.nativeObj.View('ntitlebar',
@@ -234,19 +220,21 @@
 // 						,textStyles:{align:'center',size:'16px',color:'#FFFFFF'}}
 // 				]
 // 			);
-			// this.view_head_l.addEventListener("click", this.onHeadL_Tap, false);
+
 			this.view_head.addEventListener("click", this.onHeadTap, false);
-			// this.view_head_r.addEventListener("click", this.onHeadR_Tap, false);
 			this.view_head.show()
-
-
-
 			
 		},
 		onHide:function(option){
 			console.log('onHide')
 			this.view_head.close()
-		}
+		},
+// 		onNavigationBarButtonTap:function(e){
+// 			console.log(JSON.stringify(e))
+// 			uni.showToast({
+// 				title:'click'
+// 			})
+// 		}
 		
 	}
 </script>

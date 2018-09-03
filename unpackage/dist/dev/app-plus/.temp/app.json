@@ -5,8 +5,7 @@
     "pages/cart/cart",
     "pages/shopping_list/shopping_list",
     "pages/me/me",
-    "pages/home/message/message",
-    "pages/home/search/search"
+    "pages/home/message/message"
   ],
   "window": {
     "navigationBarTextStyle": "white",

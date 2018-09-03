@@ -1,5 +1,16 @@
 <template name="cart$7a5e86ff">
-  <view class="_view data-v-ac55fb40 container">
-    <view class="_view data-v-ac55fb40 body-container"> cart </view>
+  <view class="_view data-v-09d1f594 container">
+    <view class="_view data-v-09d1f594 body-container">
+      <checkbox-group bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_checkbox-group data-v-09d1f594">
+        <label class="_label data-v-09d1f594 cart" wx:key="idx" key="{{idx}}" wx:for="{{cartList}}" wx:for-index="idx" wx:for-item="cart">
+          <checkbox class="_checkbox data-v-09d1f594 cart-select" value="{{cart.checked}}" checked="{{cart.checked}}" name="s1"></checkbox>
+          <image class="_image data-v-09d1f594 cart-image" src="{{cart.image}}" mode></image>
+          <view class="_view data-v-09d1f594 cart-info">
+            <view class="_view data-v-09d1f594 cart-title">{{cart.title}}</view>
+            <view class="_view data-v-09d1f594 cart-price">{{cart.price}}</view>
+          </view>
+        </label>
+      </checkbox-group>
+    </view>
   </view>
 </template>

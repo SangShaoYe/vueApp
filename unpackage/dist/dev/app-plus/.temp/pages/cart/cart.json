@@ -3,7 +3,7 @@
   "titleNView": {
     "buttons": [
       {
-        "text": "编辑",
+        "text": "删除",
         "fontSize": "14px",
         "float": "right"
       }

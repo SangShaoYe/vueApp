@@ -2,7 +2,16 @@
 	<view class="container">
 		<!-- 内容区 -->
 		<view class="body-container">
-			cart
+			<checkbox-group @change="checkboxChange">
+				<label class="cart" v-for="(cart,idx) in cartList" :key="idx">
+					<checkbox class="cart-select" :value="cart.checked" :checked="cart.checked" name="s1" />
+					<image class="cart-image" :src="cart.image" mode=""></image>
+					<view class="cart-info">
+						<view class="cart-title">{{cart.title}}</view>
+						<view class="cart-price">{{cart.price}}</view>
+					</view>
+				</label>
+			</checkbox-group>
 		</view>
 	</view>
 </template>
@@ -14,6 +23,15 @@
 		mapMutations
 	} from 'vuex'
 	export default {
+		data () {
+			return {
+				cartList: [
+					{title:'五得利六星馒头小麦面粉(亳州) 25kg/袋',image:'../../static/imgs/good1.jpg',price:'95.00',count:1,checked:false},
+					{title:'五得利910小麦粉 25kg/袋',image:'../../static/imgs/good2.jpg',price:'95.00',count:1,checked:false},
+					{title:'五得利六星馒头小麦面粉(亳州) 25kg/袋',image:'../../static/imgs/good3.jpg',price:'95.00',count:1,checked:false}
+				]
+			}
+		},
 		computed: {
 			...mapState(['badgeCount']),
 			...mapState(['badgeView']),
@@ -30,6 +48,9 @@
 				uni.showToast({
 					title:'click'
 				})
+			},
+			checkboxChange: function (e) {
+				console.log('checkbox发生change事件，携带value值为：' + e.detail.value)
 			},
             onClick(){
 				
@@ -96,6 +117,31 @@
 	}
 </script>
 
-<style>
-
+<style lang="less">
+	.cart{
+		height: 150px;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid #8F8F94;
+		padding: 30px;
+		.cart-select{
+			width: 15%;
+			text-align: center;
+		}
+		.cart-image{
+			width: 20%;
+			height: 100%;
+			margin-right: 20px;
+		}
+		.cart-info{
+			width: 40%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.cart-price{
+				color:#D43030;
+			}
+		}
+	}
 </style>

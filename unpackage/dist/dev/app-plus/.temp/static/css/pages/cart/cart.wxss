@@ -1,0 +1,27 @@
+
+.cart {
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #8F8F94;
+  padding: 30rpx;
+}
+.cart .cart-select {
+  width: 15%;
+  text-align: center;
+}
+.cart .cart-image {
+  width: 20%;
+  height: 100%;
+  margin-right: 20rpx;
+}
+.cart .cart-info {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart .cart-info .cart-price {
+  color: #D43030;
+}
