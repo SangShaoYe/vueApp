@@ -40,16 +40,16 @@
 			console.log(this.badgeCount);
 			// console.log(this.$store.state.badgeView);
 			
-			this.setbadgeCount();
-			//#ifdef APP-PLUS
-			this.badgeView.draw('test')
-			this.badgeView.drawText(this.badgeCount, {top: '0px',
-					left: '50%',
-					width: '15px',
-					height: '15px'}, {align:'center',
-					color: '#fff',
-					size: '12px'},'font');
-			//#endif
+// 			this.setbadgeCount();
+// 			//#ifdef APP-PLUS
+// 			this.badgeView.draw('test')
+// 			this.badgeView.drawText(this.badgeCount, {top: '0px',
+// 					left: '50%',
+// 					width: '15px',
+// 					height: '15px'}, {align:'center',
+// 					color: '#fff',
+// 					size: '12px'},'font');
+// 			//#endif
 		},
 		onShow:function(option){
 			console.log('onShow')

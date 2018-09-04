@@ -25,8 +25,8 @@ const store = new Vuex.Store({
 		setOpenid(state, openid) {
 			state.openid = openid
 		},
-		setbadgeCount(state){
-			state.badgeCount++;
+		setbadgeCount(state,count){
+			state.badgeCount = count;
 		},
 		setbadgeView(state,badgeView){
 			state.badgeView = badgeView;

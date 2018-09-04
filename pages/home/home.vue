@@ -90,7 +90,7 @@
 				//#endif
 			},
 			update(){
-				this.setbadgeCount();
+				this.setbadgeCount(++this.badgeCount);
 				//#ifdef APP-PLUS
 				badgeView.draw('test')
 				badgeView.drawText(this.badgeCount, {top: '0px',
