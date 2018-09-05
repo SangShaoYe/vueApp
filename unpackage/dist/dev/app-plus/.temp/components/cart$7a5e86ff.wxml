@@ -1,10 +1,15 @@
 <import src="cartcontrol$1321aa0c" />
 <template name="cart$7a5e86ff">
   <view class="_view data-v-09d1f594 container">
+    <view wx:if="{{cartList.length==0}}" class="_view data-v-09d1f594 view-empty">
+      <image src="../../static/imgs/empty_cart.png" class="_image data-v-09d1f594"></image>
+      <text class="_text data-v-09d1f594 hint">购物车还是空的</text>
+      <text class="_text data-v-09d1f594 btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">马上逛逛</text>
+    </view>
     <view class="_view data-v-09d1f594 body-container">
-      <checkbox-group bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_checkbox-group data-v-09d1f594">
+      <checkbox-group bindchange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_checkbox-group data-v-09d1f594">
         <view class="_view data-v-09d1f594 cart" wx:key="idx" key="{{idx}}" wx:for="{{cartList}}" wx:for-index="idx" wx:for-item="cart">
-          <label class="_label data-v-09d1f594">
+          <label wx:if="{{cart_show}}" class="_label data-v-09d1f594">
             <checkbox class="_checkbox data-v-09d1f594 cart-select" value="{{cart.checked}}" checked="{{cart.checked}}" name="s1" color="#D43030"></checkbox>
           </label>
           <image class="_image data-v-09d1f594 cart-image" src="{{cart.image}}" mode></image>
@@ -12,21 +17,25 @@
             <view class="_view data-v-09d1f594 cart-title">{{cart.title}}</view>
             <view class="_view data-v-09d1f594 cart-price">￥{{cart.price}}</view>
           </view>
-          <template bindcart-add="handleProxy" data-eventid="{{'0-'+idx}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0-'+idx], $root}}" is="cartcontrol$1321aa0c"></template>
+          <template bindcart-add="handleProxy" data-eventid="{{'1-'+idx}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0-'+idx], $root}}" is="cartcontrol$1321aa0c"></template>
         </view>
       </checkbox-group>
     </view>
-    <view class="_view data-v-09d1f594 foot-container">
-      <checkbox-group bindchange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_checkbox-group data-v-09d1f594">
-        <label class="_label data-v-09d1f594 foot-label">
+    <view class="_view data-v-09d1f594 foot-container" wx:if="{{cartList.length>0}}">
+      <checkbox-group class="_checkbox-group data-v-09d1f594 foot-label" bindchange="handleProxy" wx:if="{{cart_show}}" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+        <label class="_label data-v-09d1f594">
           <checkbox class="_checkbox data-v-09d1f594 check" value="{{all_checked}}" checked="{{all_checked}}" color="#D43030"></checkbox>
           <text class="_text data-v-09d1f594">全选</text>
         </label>
       </checkbox-group>
       <view class="_view data-v-09d1f594 foot-info">
-        <view class="_view data-v-09d1f594">共计{{cartList.length}}种商品</view>
+        <view class="_view data-v-09d1f594">共计{{cartList.length}}种{{foods_count}}件商品</view>
+        <view class="_view data-v-09d1f594 foods_price">￥{{foods_price}}</view>
       </view>
-      <button class="_button data-v-09d1f594 foot-btn" size="mini" type="warn">提交订单</button>
+      <button class="_button data-v-09d1f594 foot-btn btn1" size="mini" type="warn" bindtap="handleProxy" wx:if="{{!cart_show}}" data-eventid="{{'4'}}" data-comkey="{{$k}}">编辑</button>
+      <button class="_button data-v-09d1f594 foot-btn btn1" size="mini" type="warn" bindtap="handleProxy" wx:if="{{cart_show}}" data-eventid="{{'5'}}" data-comkey="{{$k}}">返回</button>
+      <button class="_button data-v-09d1f594 foot-btn btn1" size="mini" type="warn" bindtap="handleProxy" wx:if="{{cart_show}}" data-eventid="{{'6'}}" data-comkey="{{$k}}">删除</button>
+      <button class="_button data-v-09d1f594 foot-btn" size="mini" type="warn" wx:if="{{!cart_show}}">提交订单</button>
     </view>
   </view>
 </template>

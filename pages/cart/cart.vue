@@ -1,13 +1,16 @@
 <template>
 	<view class="container">
 		<!-- 内容区 -->
-		<view class="body-container">
-			
+		<view v-if="cartList.length==0" class="view-empty">
+		  <image src="../../static/imgs/empty_cart.png"></image>
+		  <text class="hint">购物车还是空的</text>
+		  <text class="btn" @click="see">马上逛逛</text>
+		</view>
+		<view class="body-container">	
 			<checkbox-group @change="checkboxChange">
-				
 				<view class="cart" v-for="(cart,idx) in cartList" :key="idx">
-					<label>
-					<checkbox class="cart-select" :value="cart.checked" :checked="cart.checked" name="s1" color="#D43030" />
+					<label v-if="cart_show">
+						<checkbox class="cart-select" :value="cart.checked" :checked="cart.checked" name="s1" color="#D43030" />
 					</label>
 					<image class="cart-image" :src="cart.image" mode=""></image>
 					<view class="cart-info">
@@ -17,18 +20,22 @@
 					<cartcontrol class="cartcontrol" :food="cart" @cart-add="cartAdd"></cartcontrol>
 				</view>
 			</checkbox-group>
-			
 		</view>
-		<view class="foot-container">
-			<checkbox-group @change="checkboxChange_all">
-				<label class="foot-label" >
+		<view class="foot-container" v-if="cartList.length>0">
+			<checkbox-group class="foot-label" @change="checkboxChange_all"  v-if="cart_show">
+				<label>
 					<checkbox class="check" :value="all_checked"  :checked="all_checked" color="#D43030" /><text>全选</text>
 				</label>
 			</checkbox-group>
 			<view class="foot-info">
-				<view class="">共计{{cartList.length}}种商品</view>
+				<view class="">共计{{cartList.length}}种{{foods_count}}件商品</view>
+				<view class="foods_price">￥{{foods_price}}</view>
 			</view>
-			<button class="foot-btn" size="mini" type="warn">提交订单</button>
+			<button class="foot-btn btn1" size="mini" type="warn" @click="showCheckTap" v-if="!cart_show">编辑</button>
+			<button class="foot-btn btn1" size="mini" type="warn" @click="hideCheckTap" v-if="cart_show">返回</button>
+			
+			<button class="foot-btn btn1" size="mini" type="warn" @click="delCartTap" v-if="cart_show">删除</button>
+			<button class="foot-btn" size="mini" type="warn" v-if="!cart_show">提交订单</button>
 		</view>
 	</view>
 </template>
@@ -43,6 +50,8 @@
 	export default {
 		data () {
 			return {
+				cart_show:false,
+				// cartList:[],
 				cartList: [
 					{title:'五得利六星馒头小麦面粉(亳州) 25kg/袋',image:'../../static/imgs/good1.jpg',price:'95.00',count:1,checked:false},
 					{title:'五得利910小麦粉 25kg/袋',image:'../../static/imgs/good2.jpg',price:'95.00',count:2,checked:false},
@@ -62,6 +71,13 @@
 				let n= 0;
 				this.cartList.forEach((curr, idx) => {
 					n += curr.count
+				})
+				return n;
+			},
+			foods_price:function(){
+				let n= 0;
+				this.cartList.forEach((curr, idx) => {
+					n += curr.count*curr.price
 				})
 				return n;
 			}
@@ -108,7 +124,21 @@
 						size: '12px'},'font');
 				//#endif
 			},
-            onClick(){}
+			onClick(){},
+			showCheckTap:function () {
+				this.cart_show =true
+			},
+			hideCheckTap:function () {
+				this.cart_show =false
+			},
+			delCartTap: function(){
+				this.cartList.pop()
+			},
+			see:function(){
+				uni.switchTab({
+					url:'/pages/classify/classify',
+				})
+			}
 		},
 		onLoad:function(){
 			this.setbadgeCount(this.foods_count);
@@ -207,10 +237,44 @@
 				margin-right: 10px;
 			}
 		}
+		.foot-info{
+			flex: 2;
+			margin-left: 20px;
+			font-size: 20px;
+			.foods_price{
+				color: #D43030;
+			}
+		}
+		.btn1{
+			margin-right: 10px;
+		}
 		
 	}
 	
-// 	.foot-btn{
-// 		width: 200px;
-// 	}
+	.view-empty{
+		width: 750rpx;
+		height: 750rpx;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.view-empty image{
+		width: 200rpx;
+		height: 200rpx;
+	}
+
+	.hint{
+		font-size: 32rpx;
+		color: #999999;
+	}
+
+	.btn{
+		font-size: 29rpx;
+		color: #fff;
+		background: red;
+		margin-top: 100rpx;
+		border-radius: 9rpx;
+		padding: 20rpx 200rpx 20rpx 200rpx;
+	}
 </style>

@@ -53,6 +53,41 @@
 .foot-container .foot-label .check {
   margin-right: 10rpx;
 }
+.foot-container .foot-info {
+  flex: 2;
+  margin-left: 20rpx;
+  font-size: 20rpx;
+}
+.foot-container .foot-info .foods_price {
+  color: #D43030;
+}
+.foot-container .btn1 {
+  margin-right: 10rpx;
+}
+.view-empty {
+  width: 750rpx;
+  height: 750rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.view-empty image {
+  width: 200rpx;
+  height: 200rpx;
+}
+.hint {
+  font-size: 32rpx;
+  color: #999999;
+}
+.btn {
+  font-size: 29rpx;
+  color: #fff;
+  background: red;
+  margin-top: 100rpx;
+  border-radius: 9rpx;
+  padding: 20rpx 200rpx 20rpx 200rpx;
+}
 .cartcontrol.data-v-2fc337a2 {
   display: flex;
   flex-direction: row;
