@@ -1,7 +1,7 @@
 
       !(function(){
         var uniAppViewReadyCallback = function(){
-          setCssToHead([[2,5],],undefined,{path:"./pages/home/message/message.wxss"})();
+          setCssToHead([".",[1],"lists { padding: ",[0,20]," ",[0,30],"; border-bottom: ",[0,2]," solid #cccccc; }\n.",[1],"date { text-align: right; font-size: ",[0,24],"; color: #aaaaaa; }\n",],undefined,{path:"./pages/home/message/message.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/home/message/message.wxml') } }));
         }
         if(window.__uniAppViewReady__){

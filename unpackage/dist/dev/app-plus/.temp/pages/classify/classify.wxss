@@ -1,1 +1,41 @@
-@import "../../static/css/pages/classify/classify.wxss";
+
+.header-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  color: white;
+  padding: 60rpx 10rpx 20rpx;
+  font-size: 28rpx;
+}
+.search-wrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: white;
+  border-radius: 30rpx;
+}
+.search-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 20rpx;
+}
+.search-content {
+  width: 100%;
+}
+.msg {
+  width: 100rpx;
+}
+.scroll-view-item_H {
+  width: 300rpx;
+  height: 200rpx;
+  display: inline-block;
+}

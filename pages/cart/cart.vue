@@ -7,35 +7,24 @@
 		  <text class="btn" @click="see">马上逛逛</text>
 		</view>
 		<view class="body-container">	
-			<checkbox-group @change="checkboxChange">
 				<view class="cart" v-for="(cart,idx) in cartList" :key="idx">
-					<label v-if="cart_show">
-						<checkbox class="cart-select" :value="cart.checked" :checked="cart.checked" name="s1" color="#D43030" />
-					</label>
 					<image class="cart-image" :src="cart.image" mode=""></image>
 					<view class="cart-info">
 						<view class="cart-title">{{cart.title}}</view>
-						<view class="cart-price">￥{{cart.price}}</view>
+						<view><text class="cart-price">￥{{cart.price}}</text><text class="cart-unit">/{{cart.unit}}</text></view>
 					</view>
+					<image class="cart-del" src="../../static/imgs/delete.png" mode="" @click="delCart(idx)"></image>
 					<cartcontrol class="cartcontrol" :food="cart" @cart-add="cartAdd"></cartcontrol>
 				</view>
-			</checkbox-group>
 		</view>
 		<view class="foot-container" v-if="cartList.length>0">
-			<checkbox-group class="foot-label" @change="checkboxChange_all"  v-if="cart_show">
-				<label>
-					<checkbox class="check" :value="all_checked"  :checked="all_checked" color="#D43030" /><text>全选</text>
-				</label>
-			</checkbox-group>
 			<view class="foot-info">
 				<view class="">共计{{cartList.length}}种{{foods_count}}件商品</view>
 				<view class="foods_price">￥{{foods_price}}</view>
 			</view>
-			<button class="foot-btn btn1" size="mini" type="warn" @click="showCheckTap" v-if="!cart_show">编辑</button>
-			<button class="foot-btn btn1" size="mini" type="warn" @click="hideCheckTap" v-if="cart_show">返回</button>
 			
-			<button class="foot-btn btn1" size="mini" type="warn" @click="delCartTap" v-if="cart_show">删除</button>
-			<button class="foot-btn" size="mini" type="warn" v-if="!cart_show">提交订单</button>
+			<!-- <button class="foot-btn btn1" size="mini" type="warn" @click="delCartTap" >删除</button> -->
+			<button class="foot-btn" size="mini" type="warn" @click="postOrderTap">提交订单</button>
 		</view>
 	</view>
 </template>
@@ -50,14 +39,12 @@
 	export default {
 		data () {
 			return {
-				cart_show:false,
 				// cartList:[],
 				cartList: [
-					{title:'五得利六星馒头小麦面粉(亳州) 25kg/袋',image:'../../static/imgs/good1.jpg',price:'95.00',count:1,checked:false},
-					{title:'五得利910小麦粉 25kg/袋',image:'../../static/imgs/good2.jpg',price:'95.00',count:2,checked:false},
-					{title:'五得利六星馒头小麦面粉(亳州) 25kg/袋',image:'../../static/imgs/good3.jpg',price:'95.00',count:3,checked:false}
+					{title:'五得利六星馒头小麦面粉(亳州) 25kg/袋',image:'../../static/imgs/good1.jpg',price:'95.00',count:1,unit:'袋'},
+					{title:'五得利910小麦粉 25kg/袋',image:'../../static/imgs/good2.jpg',price:'95.00',count:2,unit:'袋'},
+					{title:'五得利六星馒头小麦面粉(亳州) 25kg/袋',image:'../../static/imgs/good3.jpg',price:'95.00',count:3,unit:'袋'}
 				],
-				all_checked:0
 			}
 		},
 		components: {
@@ -93,25 +80,6 @@
 					title:'click'
 				})
 			},
-			checkboxChange: function (e) {
-				console.log('checkbox发生change事件，携带value值为：' + e.detail.value)
-			},
-			checkboxChange_all: function (e) {
-				let kk = e.detail.value
-				if(kk.length>0){
-					uni.showToast({
-						title:'全选'
-					})
-					this.cartList.forEach((item) => {
-						item.checked = '1'
-					})
-				}else{
-					this.cartList.forEach((item) => {
-						item.checked = ''
-					})
-				}
-				console.log( JSON.stringify(e.detail.value))
-			},
 			cartAdd(){
 				this.setbadgeCount(this.foods_count);
 				//#ifdef APP-PLUS
@@ -125,12 +93,6 @@
 				//#endif
 			},
 			onClick(){},
-			showCheckTap:function () {
-				this.cart_show =true
-			},
-			hideCheckTap:function () {
-				this.cart_show =false
-			},
 			delCartTap: function(){
 				this.cartList.pop()
 			},
@@ -138,7 +100,25 @@
 				uni.switchTab({
 					url:'/pages/classify/classify',
 				})
-			}
+			},
+			// 删除商品
+			delCart:function(idx){
+				uni.showModal({
+					title: '删除商品',
+					content: '确认删除该商品？',
+					success:  (res) => {
+						if (res.confirm) {
+							this.cartList.splice(idx,1)
+						} else if (res.cancel) {
+							console.log('用户点击取消');
+						}
+					}
+				})
+			},
+			// 提交订单
+			postOrderTap:function(){
+				// 跳转到确认订单页
+			},
 		},
 		onLoad:function(){
 			this.setbadgeCount(this.foods_count);
@@ -173,10 +153,22 @@
             // ntitlebar.close();
         },
 		onNavigationBarButtonTap:function(e){
-            console.log(JSON.stringify(e))
-			uni.showToast({
-				title:'click'
+			uni.showModal({
+				title: '清空购物车',
+				content: '确认清空购物车？',
+				success:  (res) => {
+					if (res.confirm) {
+						this.cartList = []
+					} else if (res.cancel) {
+						console.log('用户点击取消');
+					}
+				}
 			})
+			
+//             console.log(JSON.stringify(e))
+// 			uni.showToast({
+// 				title:'click'
+// 			})
         },
 	}
 </script>
@@ -189,17 +181,17 @@
 		border-bottom: 1px solid #8F8F94;
 		padding: 30px;
 		position: relative;
-		.cart-select{
-			width: 15%;
-			text-align: center;
-		}
+// 		.cart-select{
+// 			width: 15%;
+// 			text-align: center;
+// 		}
 		.cart-image{
 			width: 20%;
 			height: 100%;
 			margin-right: 20px;
 		}
 		.cart-info{
-			width: 40%;
+			width: 50%;
 			height: 100%;
 			display: flex;
 			flex-direction: column;
@@ -207,6 +199,13 @@
 			.cart-price{
 				color:#D43030;
 			}
+		}
+		.cart-del{
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			width: 40px;
+			height: 40px;
 		}
 		.cartcontrol{
 			position: absolute;

@@ -1,1 +1,1 @@
-<import src="../../components/cart$7a5e86ff" /><template is="cart$7a5e86ff" data="{{ ...$root['0'], $root }}"/>
+<import src="/pages/cart/cart.vue.wxml" /><template is="7a5e86ff" data="{{ ...$root['0'], $root }}"/>

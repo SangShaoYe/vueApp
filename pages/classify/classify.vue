@@ -1,16 +1,23 @@
 <template>
 	<view class="container">
-		<!-- 头部 -->
-		<!-- <view class="header-container" :style="{'background':gcolor}">
-			<view class="header-btns">消息</view>
-			<view class="header-search-wrapper">
-				<image class="header-search-icon" src="../../static/search.png" mode=""></image>
-				<input class="header-search-content" type="text" value="" placeholder="搜索商品名称" />
-			</view>
-			<view class="header-btns"></view>
-		</view> -->
 		<!-- 内容区 -->
 		<view class="body-container">
+			<!-- <swiper style="height: 100px;background: #d4d4d4;" class="banner-container" display-multiple-items='3' :indicator-dots="indicatorDots"  :interval="interval" :indicator-active-color="gcolor" :duration="duration">
+				<swiper-item  v-for="item in itemList" :key="item">
+					 <view style="border-bottom: 1px solid #D43030;">{{item}}</view>
+				</swiper-item>
+			</swiper> -->
+			<scroll-view scroll-x style="height: 200px;width: 100%"  >
+				
+					<!-- <view style="padding: 20px 50px;display: inline-block;white-space: nowrap;"  v-for="item in itemList" :key="item">
+						<text style="border-bottom: 1px solid #D43030;">{{item}}</text>
+					</view> -->
+				
+                <view id="green" class="scroll-view-item_H bc_green" style="background: green;"></view>
+                <view id="red" class="scroll-view-item_H bc_red" style="background: red;"></view>
+                <view id="yellow" class="scroll-view-item_H bc_yellow" style="background: green;"></view>
+                <view id="blue" class="scroll-view-item_H bc_blue" style="background: blue;"></view>
+            </scroll-view>
 			<view class="">分类 {{badgeCount}}</view>
 			<view class="icon-add_circle"></view>
 		</view>
@@ -24,6 +31,24 @@
 		mapMutations
 	} from 'vuex'
 	export default {
+		data() {
+			return {
+				itemList: [
+					'item1',
+					'item2',
+					'item3',
+					'item4',
+					'item5',
+					'item6',
+					'item7',
+					'item8',
+					'item9'
+				],
+				indicatorDots: true,
+				interval: 5000,
+				duration: 1000,
+			}
+		},
 		created:function(){
 			
 		},
@@ -94,5 +119,11 @@
 	}
 	.msg{
 		width: 100px;
+	}
+	
+	.scroll-view-item_H{
+		width: 300px;
+		height: 200px;
+		display: inline-block;
 	}
 </style>

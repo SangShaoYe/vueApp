@@ -1,0 +1,31 @@
+<import src="/components/cartcontrol.vue.wxml" />
+<template name="7a5e86ff">
+  <view class="_view data-v-09d1f594 container">
+    <view wx:if="{{cartList.length==0}}" class="_view data-v-09d1f594 view-empty">
+      <image src="../../static/imgs/empty_cart.png" class="_image data-v-09d1f594"></image>
+      <text class="_text data-v-09d1f594 hint">购物车还是空的</text>
+      <text class="_text data-v-09d1f594 btn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">马上逛逛</text>
+    </view>
+    <view class="_view data-v-09d1f594 body-container">
+      <view class="_view data-v-09d1f594 cart" wx:key="idx" key="{{idx}}" wx:for="{{cartList}}" wx:for-index="idx" wx:for-item="cart">
+        <image class="_image data-v-09d1f594 cart-image" src="{{cart.image}}" mode></image>
+        <view class="_view data-v-09d1f594 cart-info">
+          <view class="_view data-v-09d1f594 cart-title">{{cart.title}}</view>
+          <view class="_view data-v-09d1f594">
+            <text class="_text data-v-09d1f594 cart-price">￥{{cart.price}}</text>
+            <text class="_text data-v-09d1f594 cart-unit">/{{cart.unit}}</text>
+          </view>
+        </view>
+        <image class="_image data-v-09d1f594 cart-del" src="../../static/imgs/delete.png" mode bindtap="handleProxy" data-eventid="{{'1-'+idx}}" data-comkey="{{$k}}"></image>
+        <template bindcart-add="handleProxy" data-eventid="{{'2-'+idx}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0-'+idx], $root}}" is="1321aa0c"></template>
+      </view>
+    </view>
+    <view class="_view data-v-09d1f594 foot-container" wx:if="{{cartList.length>0}}">
+      <view class="_view data-v-09d1f594 foot-info">
+        <view class="_view data-v-09d1f594">共计{{cartList.length}}种{{foods_count}}件商品</view>
+        <view class="_view data-v-09d1f594 foods_price">￥{{foods_price}}</view>
+      </view>
+      <button class="_button data-v-09d1f594 foot-btn" size="mini" type="warn" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">提交订单</button>
+    </view>
+  </view>
+</template>

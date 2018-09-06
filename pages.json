@@ -19,7 +19,7 @@
 				"app-plus":{
 					"titleNView":{
 						"buttons":[{
-							"text":"删除",
+							"text":"清空",
 							"fontSize":"14px",
 							"float":"right"
 						}]
@@ -66,28 +66,28 @@
 		"backgroundColor": "#ffffff",
 		"list": [{
 			"pagePath": "pages/home/home",
-			"iconPath": "static/01.png",
-			"selectedIconPath": "static/06.png",
+			"iconPath": "static/imgs/01.png",
+			"selectedIconPath": "static/imgs/06.png",
 			"text": "首页"
 		}, {
 			"pagePath": "pages/classify/classify",
-			"iconPath": "static/02.png",
-			"selectedIconPath": "static/07.png",
+			"iconPath": "static/imgs/02.png",
+			"selectedIconPath": "static/imgs/07.png",
 			"text": "分类"
 		}, {
 			"pagePath": "pages/cart/cart",
-			"iconPath": "static/03.png",
-			"selectedIconPath": "static/08.png",
+			"iconPath": "static/imgs/03.png",
+			"selectedIconPath": "static/imgs/08.png",
 			"text": "购物车"
 		}, {
 			"pagePath": "pages/shopping_list/shopping_list",
-			"iconPath": "static/04.png",
-			"selectedIconPath": "static/09.png",
+			"iconPath": "static/imgs/04.png",
+			"selectedIconPath": "static/imgs/09.png",
 			"text": "常购清单"
 		}, {
 			"pagePath": "pages/me/me",
-			"iconPath": "static/05.png",
-			"selectedIconPath": "static/10.png",
+			"iconPath": "static/imgs/05.png",
+			"selectedIconPath": "static/imgs/10.png",
 			"text": "我的"
 		}]
 	}

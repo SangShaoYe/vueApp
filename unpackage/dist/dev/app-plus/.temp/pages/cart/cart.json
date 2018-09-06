@@ -1,12 +1,1 @@
-{
-  "navigationBarTitleText": "购物车",
-  "titleNView": {
-    "buttons": [
-      {
-        "text": "删除",
-        "fontSize": "14px",
-        "float": "right"
-      }
-    ]
-  }
-}
+{"navigationBarTitleText":"购物车","titleNView":{"buttons":[{"text":"清空","fontSize":"14px","float":"right"}]}}

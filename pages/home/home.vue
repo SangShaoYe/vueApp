@@ -3,15 +3,47 @@
 		<!-- 内容区 -->
 		<view class="body-container">
 			<!-- 轮播图区 -->
-			<view class="banner-container">
-				<swiper :indicator-dots="indicatorDots" :circular="circular" :autoplay="autoplay" :interval="interval" :indicator-active-color="gcolor" :duration="duration">
-					<swiper-item v-for="item in itemList" :key="item">
-						<image class="swiper-image" :src="item" mode=""></image>
-					</swiper-item>
-				</swiper>
+			<swiper class="banner-container"  :indicator-dots="indicatorDots" :circular="circular" :autoplay="autoplay" :interval="interval" :indicator-active-color="gcolor" :duration="duration">
+				<swiper-item v-for="item in itemList" :key="item">
+					<image  class="swiper-image" :src="item" mode=""></image>
+				</swiper-item>
+			</swiper>
+			<!-- 组合促销 -->
+			<view class="group-container">
+				<image class="group-big" src="../../static/imgs/group0.jpg" mode=""></image>
+				<view class="group-small">
+					<image class="group-img-small" src="../../static/imgs/group1.jpg" mode=""></image>
+					<image class="group-img-small" src="../../static/imgs/group1.jpg" mode=""></image>
+				</view>
 			</view>
+			<!-- 新品推荐 -->
+			<view class="new-container">
+				<image class="new-img" src="../../static/imgs/newPush.jpg" mode=""></image>
+			</view>
+			<!-- 火爆热销 -->
+			<view class="hot-container">
+				<view class="hot-header">
+					<image class="hot-logo" src="../../static/imgs/hot.png" mode=""></image>
+					<text>火爆热销</text>
+				</view>
+				<view class="hot-content">
+					<view class="hot-list" v-for="(hot,idx) in hotList" :key="idx">
+						<image class="hot-image" :src="hot.image" mode=""></image>
+						<view class="hot-title">{{hot.title}}</view>
+						<view class="hot-price-wrap">
+							<radio-group class="radio-group" @change="radioChange.apply(this,[idx,$event])">
+								<view class=""  v-for="(item,idx_sub) in hot.buy_chioce" :key="item">
+									<view class="price-row"><radio v-if="hot.buy_chioce.length>1" :value="idx_sub"  :checked="item.price==hot.price" color="#D43030" /><text class="hot-price">￥{{item.price}}</text><text>/{{item.unit}}</text></view>
+								</view>
+							</radio-group>
+						</view>
+					</view>
+				</view>
+			</view>
+			
+			
+			
 			<view class="">
-				<!-- 首页 -->
 				<button type="primary" size="mini" @click="update">button</button>
 			</view>
 		</view>
@@ -30,15 +62,49 @@
 			return {
 				view_head:null,
 				itemList: [
-					'../../static/banner1.jpg',
-					'../../static/banner2.jpg',
-					'../../static/banner3.jpg'
+					'../../static/imgs/banner1.jpg',
+					'../../static/imgs/banner2.jpg',
+					'../../static/imgs/banner3.jpg'
 				],
 				indicatorDots: true,
 				autoplay: true,
 				interval: 5000,
 				duration: 1000,
 				circular: true,
+				hotList: [{
+					title:'元宝一级大豆油（色拉油）10L*2桶/箱',
+					price:'123.00',
+					unit:'箱',
+					image:'../../static/imgs/good1.jpg',
+					buy_chioce:[{
+						price:'123.00',
+						unit:'箱',
+					}]
+				},{
+					title:'元宝一级大豆油（色拉油）10L*2桶/箱',
+					price:'123.00',
+					unit:'箱',
+					image:'../../static/imgs/good1.jpg',
+					buy_chioce:[{
+						price:'123.00',
+						unit:'箱',
+					},{
+						price:'32.00',
+						unit:'桶',
+					}]
+				},{
+					title:'元宝一级大豆油（色拉油）10L*2桶/箱',
+					price:'123.00',
+					unit:'箱',
+					image:'../../static/imgs/good1.jpg',
+					buy_chioce:[{
+						price:'123.00',
+						unit:'箱',
+					},{
+						price:'32.00',
+						unit:'桶',
+					}]
+				}],
 				
 				city:'柯桥'
 			}
@@ -54,7 +120,7 @@
 		methods:{
 			...mapMutations(['setbadgeCount']),
 			...mapMutations(['setbadgeView']),
-			init(){
+			init: function(){
 				console.log(this.gcolor)
 				//#ifdef APP-PLUS
 				badgeView = new plus.nativeObj.View('test',
@@ -89,7 +155,7 @@
 				})
 				//#endif
 			},
-			update(){
+			update: function(){
 				this.setbadgeCount(++this.badgeCount);
 				//#ifdef APP-PLUS
 				badgeView.draw('test')
@@ -108,12 +174,12 @@
 				})
 				//#endif
 			},
-			ToMessage(){
+			ToMessage: function(){
 				uni.navigateTo({
 					url:'message/message',
 				})
 			},
-			onHeadTap(e){
+			onHeadTap: function(e){
 				let W = uni.getSystemInfoSync()
 				var x=e.clientX;
 				var y=e.clientY;
@@ -149,6 +215,12 @@
 						})
 					}
 				}
+			},
+			radioChange: function(e,t) {
+				let v = t.detail.value
+				console.log(e)				
+				console.log(v)				
+				// console.log(JSON.stringify(t))
 			}
 		},
 		onLoad:function(){
@@ -239,30 +311,94 @@
 	}
 </script>
 
-<style>
-	/* .header-container .icon{
-		line-height: 10px;
-	} */
-	.content {
-		flex: 1;
-		justify-content: center;
-		align-items: center;
-	}
-	.title {
-		font-size: 36px;
-		color: #8f8f94;
-	}
-	
+<style lang="less" scoped>
+
 	
 	.city{
 		width: 100px;
 		text-align:center;
 	}
 	
-	
-	
+	.banner-container{
+		height: 300px;
+	}
 	.swiper-image{
 		width: 100%;
 		height: 100%;
+	}
+	
+	.group-container{
+		display: flex;
+		height: 375px;
+		.group-big{
+			flex: 1;
+			height: 100%;
+		}
+		.group-small{
+			flex: 1;
+			height: 100%;
+			.group-img-small{
+				width: 100%;
+				height: 50%;
+			}
+		}
+	}
+	
+	.new-container{
+		height: 195px;
+		.new-img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	
+	.hot-container{
+		.hot-header{
+			padding: 20px;
+			border-bottom: 1px solid #D9D9D9;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.hot-logo{
+				width: 30px;
+				height: 30px;
+				margin-right: 10px;
+			}
+		}
+		.hot-content{
+			display: flex;
+			flex-wrap: wrap;
+			.hot-list{
+				display: flex;
+				flex-direction: column;
+				// justify-content: space-between;
+				width: 50%;
+				height: 350px;
+				padding: 20px;
+				box-sizing: border-box;
+				border-bottom: 1px solid #D9D9D9;
+				border-right: 1px solid #D9D9D9;
+				font-size: 26px;
+				.hot-image{
+					width: 100px;
+					height: 150px;
+					align-self: center;
+					margin-bottom: 10px;
+				}
+				.hot-price-wrap{
+					margin-top: 20px;
+					height: 100px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					.price-row{
+						margin-bottom: 5px;
+					}
+				}
+				.hot-price{
+					color: #D43030;
+				}
+			}
+		}
 	}
 </style>
